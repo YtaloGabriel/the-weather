@@ -14,7 +14,7 @@ const Header = () => {
 
   // Fetch to API and insert values to 'json' state.
   const getInfos = async (info) => {
-    if (info.length > 1) {
+    if (info && info.length > 1) {
       const api = await fetch(
         `https://api.weatherapi.com/v1/search.json?key=63df498aefa44c7bb9952751220307&q=${info}`,
       );
@@ -34,7 +34,7 @@ const Header = () => {
         />
         <input
           className={`${Styles.search} ${
-            info.length > 3 && Styles.boxSearchActive
+            info && info.length > 3 && Styles.boxSearchActive
           }`}
           type="text"
           placeholder="Pesquise uma cidade (sem acentuação)"

@@ -4,10 +4,10 @@ import Styles from '../css/Header-css/SearchOptions.module.css';
 const SearchOptions = ({ json }) => {
   return (
     <div className={Styles.searchBox}>
-      {json.length ? (
+      {json.length && json.length ? (
         json.map((item) => {
           return (
-            <a href="#" className={Styles.option}>
+            <a href="#" className={Styles.option} key={item.id}>
               {item.name}
               <span>
                 <img
