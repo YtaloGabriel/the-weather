@@ -40,8 +40,10 @@ const Header = () => {
           placeholder="Pesquise uma cidade (sem acentuação)"
           onChange={handleText}
         />
+        {info && info.length > 3 && (
+          <SearchOptions json={json} isActive={true} />
+        )}
       </label>
-      {info && info.length > 3 && <SearchOptions json={json} />}
     </header>
   );
 };

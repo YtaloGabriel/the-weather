@@ -1,6 +1,7 @@
 .searchBox {
   /* margin-top: 1.5rem; */
   background-color: var(--white);
+  position: absolute;
   color: var(--blue1);
   width: 100%;
   max-width: 34rem;
