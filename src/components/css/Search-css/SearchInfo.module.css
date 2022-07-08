@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: var(--blue3);
+  height: 24rem;
+  width: 90%;
+  max-width: 64rem;
+  margin: 0 auto;
+  border-radius: .5rem;
+  padding: 3rem;
+}
+
+.temperature {
+  display: flex;
+  align-items: flex-start;
+  width: auto;
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.temperature > span {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0 .5rem;
+  font-weight: normal;
+}
+
+.localInfo {
+  width: 50%;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.localInfo > span {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.weather {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  font-size: 2rem;
+  font-weight: 500;
+}

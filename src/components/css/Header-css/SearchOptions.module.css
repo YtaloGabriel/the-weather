@@ -4,7 +4,7 @@
   position: absolute;
   color: var(--blue1);
   width: 100%;
-  max-width: 34rem;
+  max-width: inherit;
   border-radius: 0 0 .5rem .5rem;
   padding: .5rem 1rem;
   max-height: 20rem;
