@@ -10,19 +10,7 @@ const SearchOptions = ({ json, isActive }) => {
   const handleOptionClick = ({ target }) => {
     const value = target.children[0].innerText;
     setActive(false);
-    getTextJson(value);
-  };
-
-  const getTextJson = async (value) => {
-    try {
-      const api = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=63df498aefa44c7bb9952751220307&q=${value}&aqi=no`,
-      );
-      const json = await api.json();
-      await context.setName(json.location.name);
-    } catch (err) {
-      console.log(err);
-    }
+    context.setName(value);
   };
 
   return (
