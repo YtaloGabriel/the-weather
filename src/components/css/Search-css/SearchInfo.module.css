@@ -32,6 +32,7 @@
   flex-direction: column;
   font-size: 3rem;
   font-weight: 600;
+  text-align: end;
 }
 
 .localInfo > span {
@@ -45,4 +46,39 @@
   align-items: flex-end;
   font-size: 2rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 34rem) {
+  .container {
+    height: 12rem;
+    padding: 1.5rem;
+  }
+
+  .temperature {
+    font-size: 2.5rem;
+  }
+
+  .temperature > span {
+    margin-top: 3px;
+    font-size: 1rem;
+  }
+
+  .localInfo {
+    font-size: 1.2rem;
+  }
+
+  .localInfo > span {
+    font-size: .8rem;
+  }
+
+  .weather {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 58rem) {
+  .localInfo {
+    font-size: 2.5rem;
+  }
 }

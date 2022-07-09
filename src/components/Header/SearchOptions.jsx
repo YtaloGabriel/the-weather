@@ -2,8 +2,9 @@ import React from 'react';
 import { GlobalContext } from '../../GlobalContext';
 import Styles from '../css/Header-css/SearchOptions.module.css';
 import { Link } from 'react-router-dom';
+import LocalLoading from '../Loading/LocalLoading';
 
-const SearchOptions = ({ json, isActive }) => {
+const SearchOptions = ({ json, isActive, loading }) => {
   const context = React.useContext(GlobalContext);
   const [active, setActive] = React.useState(isActive);
 
@@ -17,6 +18,7 @@ const SearchOptions = ({ json, isActive }) => {
     <>
       {active && (
         <div className={Styles.searchBox}>
+          {loading && <LocalLoading />}
           {json && json.length ? (
             json.map((item) => {
               return (

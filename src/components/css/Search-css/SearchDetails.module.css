@@ -64,3 +64,27 @@
   font-size: 1.2rem;
   font-weight: normal;
 }
+
+@media screen and (max-width: 34rem) {
+  .cards {
+    justify-content: space-between;
+  }
+
+  .card {
+    max-width: calc(50% - .5rem);
+    margin-right: 0;
+    height: 12rem;
+  }
+
+  .card > img {
+    width: 3rem;
+  }
+
+  .cardInfo {
+    font-size: 1.8rem;
+  }
+
+  .cardTit {
+    font-size: 1rem;
+  }
+}

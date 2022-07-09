@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .title {
@@ -53,3 +54,16 @@
   border-color: var(--blue3);
 }
 
+@media screen and (max-width: 28rem) {
+  .header {
+    width: 90vw;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .search {
+    font-size: .9rem;
+  }
+}
