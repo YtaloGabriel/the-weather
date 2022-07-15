@@ -43,7 +43,7 @@ const SearchMain = () => {
       </section>
     );
   }
-  return <Navigate to="/" />;
+  return <Navigate to="/the-weather" />;
 };
 
 export default SearchMain;

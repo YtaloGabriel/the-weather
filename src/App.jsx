@@ -13,7 +13,7 @@ const App = () => {
         <GlobalStorage>
           <Header />
           <Routes>
-            <Route path="/search" element={<SearchMain />} />
+            <Route path="the-weather/search" element={<SearchMain />} />
           </Routes>
           <Footer />
         </GlobalStorage>

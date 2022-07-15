@@ -23,7 +23,7 @@ const SearchOptions = ({ json, isActive, loading }) => {
             json.map((item) => {
               return (
                 <Link
-                  to={'/search'}
+                  to={'/the-weather/search'}
                   className={Styles.option}
                   key={item.id}
                   onClick={handleOptionClick}
